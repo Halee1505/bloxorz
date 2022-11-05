@@ -13,7 +13,7 @@ class Block:
         self.node2 = Node(node2.x, node2.y)
 
     def string_block(self):
-        return str(self.node1.x) + str(self.node1.y) + str(self.node2.x) + str(self.node2.y)
+        return str(self.node1.x) + "," + str(self.node1.y) + "." + str(self.node2.x) + "," + str(self.node2.y)
 
     def finish(self, goal):
         if self.node1.x == self.node2.x and self.node1.y == self.node2.y and self.node1.x == goal.x and self.node1.y == goal.y:
